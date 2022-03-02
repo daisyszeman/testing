@@ -1,0 +1,32 @@
+html,body,#app
+  height: 100%
+  margin: 0
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: #333
+  font-family: serif
+  
+.ticket
+  background-color: white
+  padding: 30px 10px
+  margin: 20px
+  text-align: center
+  
+  background-image: radial-gradient(#d1e8c9 0%, #d1e8c9 60%, transparent 60%, transparent 100%)
+  background-size: 30px 30px 
+  
+  .arrow
+    font-size: 40px
+  .station
+    font-size: 30px
+    margin: 10px 10px
+    font-weight: bold
+  .info
+    font-size: 18px
+    margin-top: 10px
+  
+  transition: 0.5s
+  &:hover
+    transform: translate(0px,-10px)
+    

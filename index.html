@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - 第六章 單元1 Vue_2</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="app">
+  <div class="ticket">
+    <div class="date">{{ticket.date}}</div>
+    <div class="info">{{company}}</div>
+    <div class="info">{{ ticket.direction=="south"?'南下':'北上'}}</div>
+    <div class="station">{{ ticket.from}}站</div>
+    <div class="arrow">↓</div>
+    <div class="station">{{ ticket.to}}站</div>
+    <div class="info" v-html="ticket.other"></div>
+    <div class="info">特價 {{ticket.price*ticket.discount}} 元</div>
+  </div>
+  <div class="ticket">
+    <div class="date">{{ticket.date}}</div>
+    <div class="info">{{company}}</div>
+    <div class="info">{{ ticket.direction=="south"?'南下':'北上'}}</div>
+    <div class="station">{{ ticket.to}}站</div>
+    <div class="arrow">↓</div>
+    <div class="station">{{ ticket.from}}站</div>
+    <div class="info" v-html="ticket.other"></div>
+    <div class="info">售價 {{ticket.price}} 元</div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
